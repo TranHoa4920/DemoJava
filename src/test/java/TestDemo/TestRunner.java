@@ -1,12 +1,9 @@
 package TestDemo;
 
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
-import io.cucumber.junit.
-import cucumber.api.junit.Cucumber;
 
-public class TestRunner {
-
-
-    @RunWith(Cucumber.class)
-    public class runTest {}
-}
+@RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/Features", glue = "TestDemo")
+public class TestRunner {}
